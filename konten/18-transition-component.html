@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Transitions</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <main class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-8">Dashboard Admin</h1>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <button class="bg-blue-600 text-white px-5 py-3 rounded-lg
+               hover:bg-blue-800 transition">
+                Klik Saya
+            </button>
+
+            <button class="bg-blue-600 text-white px-5 py-3 rounded-lg
+               hover:bg-green-600
+               transition duration-1000">
+                Durasi 500ms
+            </button>
+
+             <button class="bg-green-600 text-white px-5 py-3 rounded-lg
+               hover:bg-green-800
+               transition duration-500 delay-300">
+                Durasi 500ms
+            </button>
+
+        </section>
+    </main>
+</body>
+
+</html>
