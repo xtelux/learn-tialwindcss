@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hari 7 card component</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-slate-50 p-8 font-sans flex items-center justify-center"
+    >
+      <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Variasi 1: Feature Information Card (Clean & Subtle Elevation) -->
+        <div
+          class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between"
+        >
+          <div>
+            <!-- Badge & Status Icon -->
+            <div class="flex items-center justify-between mb-4">
+              <div
+                class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-lg"
+              >
+                ⚡
+              </div>
+              <span
+                class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200"
+              >
+                Stabil
+              </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-slate-900">
+              Performa Otomatisasi
+            </h3>
+            <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+              Sistem memperbarui data analitik secara berkala tanpa memerlukan
+              intervensi manual atau jeda kompilasi.
+            </p>
+          </div>
+
+          <!-- Footer Info -->
+          <div
+            class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400"
+          >
+            <span>Diperbarui 5 mnt lalu</span>
+            <button
+              class="font-semibold text-indigo-600 hover:text-indigo-700 transition"
+            >
+              Lihat Log &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Variasi 2: Media Course Card (Visual Cover + Ring + Accent) -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:ring-2 hover:ring-indigo-500/20 transition-all flex flex-col"
+        >
+          <!-- Media/Image Thumbnail Placeholder -->
+          <div
+            class="h-40 bg-gradient-to-tr from-slate-800 to-slate-900 p-4 relative flex flex-col justify-between"
+          >
+            <span
+              class="self-start text-[11px] font-semibold tracking-wider uppercase text-white/90 bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-md"
+            >
+              Modul UI
+            </span>
+            <div class="text-white text-xs font-medium">Durasi: 45 Menit</div>
+          </div>
+
+          <!-- Content Area -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 line-clamp-1">
+                Membangun Card System Reusable
+              </h3>
+              <p
+                class="text-sm text-slate-600 mt-2 line-clamp-2 leading-relaxed"
+              >
+                Panduan lengkap menyusun token border, kelengkungan sudut, dan
+                bayangan modular untuk kartu informasi.
+              </p>
+            </div>
+
+            <!-- Action Area -->
+            <div class="mt-6 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-7 h-7 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold"
+                >
+                  T
+                </div>
+                <span class="text-xs font-medium text-slate-700"
+                  >Tim Mentor</span
+                >
+              </div>
+
+              <button
+                class="px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-700 transition shadow-xs"
+              >
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

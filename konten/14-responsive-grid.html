@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hari 14 Responsive Grid</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="min-h-screen p-4 md:p-6">
+      <!-- Header -->
+      <header class="bg-white p-4 rounded-xl shadow mb-6">
+        <h1 class="text-xl md:text-2xl font-bold">Dashboard Admin</h1>
+        <p class="text-sm text-gray-500 mt-1">Monitoring data aplikasi</p>
+      </header>
+
+      <!-- Statistik -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white p-5 rounded-xl shadow">
+          <p class="text-gray-500 text-sm">Total Pengguna</p>
+          <h2 class="text-2xl font-bold mt-2">1.250</h2>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <p class="text-gray-500 text-sm">Total Produk</p>
+          <h2 class="text-2xl font-bold mt-2">350</h2>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <p class="text-gray-500 text-sm">Total Transaksi</p>
+          <h2 class="text-2xl font-bold mt-2">890</h2>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <p class="text-gray-500 text-sm">Pendapatan</p>
+          <h2 class="text-2xl font-bold mt-2">Rp 25 Juta</h2>
+        </div>
+      </section>
+
+      <!-- Konten Dashboard -->
+      <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+        <section class="lg:col-span-2 bg-white p-5 rounded-xl shadow">
+          <h2 class="font-bold text-lg mb-3">Grafik Penjualan</h2>
+          <div
+            class="h-48 bg-blue-50 rounded-lg flex items-center justify-center"
+          >
+            Grafik akan ditampilkan di sini
+          </div>
+        </section>
+        <section class="bg-white p-5 rounded-xl shadow">
+          <h2 class="font-bold text-lg mb-3">Aktivitas Terbaru</h2>
+          <p class="text-gray-500 text-sm">Belum ada aktivitas.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

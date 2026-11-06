@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hari 11 Responsive Breakpoints</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-slate-100 font-sans p-4 sm:p-8 lg:p-16 flex items-center justify-center"
+    >
+      <!-- Kontainer Kartu: Lebar penuh di mobile, terkunci di tablet/desktop -->
+      <div
+        class="w-full max-w-sm md:max-w-2xl lg:max-w-3xl bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all"
+      >
+        <!-- Layout Wrapper: Flex kolom di mobile, Flex baris mulai md (tablet) -->
+        <div class="flex flex-col md:flex-row">
+          <!-- Visual Cover / Avatar Area -->
+          <div
+            class="w-full md:w-2/5 bg-gradient-to-tr from-indigo-700 via-indigo-600 to-purple-600 p-8 flex flex-col items-center justify-center text-center text-white"
+          >
+            <div
+              class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center text-2xl font-black shadow-inner"
+            >
+              UI
+            </div>
+            <h2 class="text-lg md:text-xl font-bold mt-4">Nadia Rahma</h2>
+            <p class="text-xs text-indigo-200 mt-1">Lead Design Architect</p>
+          </div>
+
+          <!-- Detail Info Area: Padding dinamis (p-6 di mobile, p-8 di tablet) -->
+          <div class="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-between">
+            <div>
+              <!-- Status Tag & Breakpoint Badge -->
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span
+                  class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Tersedia untuk Kontrak
+                </span>
+
+                <!-- Indikator Ukuran Layar Aktif (Uji Coba Visual Breakpoint) -->
+                <span
+                  class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-500"
+                >
+                  <span class="inline sm:hidden">Mobile (< 640)</span>
+                  <span class="hidden sm:inline md:hidden">SM (>= 640)</span>
+                  <span class="hidden md:inline lg:hidden">MD (>= 768)</span>
+                  <span class="hidden lg:inline xl:hidden">LG (>= 1024)</span>
+                  <span class="hidden xl:inline">XL / 2XL</span>
+                </span>
+              </div>
+
+              <h3 class="text-base md:text-lg font-bold text-slate-900">
+                Fokus Spesialisasi
+              </h3>
+              <p class="text-xs md:text-sm text-slate-600 mt-2 leading-relaxed">
+                Membangun sistem desain modular, antarmuka dashboard kompleks,
+                dan memastikan konsistensi visual di seluruh perangkat.
+              </p>
+            </div>
+
+            <!-- Metric & Action: Grid 1 kolom di mobile, 2 kolom mulai sm -->
+            <div
+              class="mt-6 pt-6 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            >
+              <div>
+                <p
+                  class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold"
+                >
+                  Pengalaman
+                </p>
+                <p class="text-base font-bold text-slate-800">8+ Tahun</p>
+              </div>
+
+              <div class="flex gap-2">
+                <button
+                  class="w-full sm:w-auto px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold rounded-xl transition shadow-xs"
+                >
+                  Hubungi
+                </button>
+                <button
+                  class="w-full sm:w-auto px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition"
+                >
+                  Portofolio
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

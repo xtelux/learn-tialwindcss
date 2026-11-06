@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hari 10 grid layout</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-slate-100 font-sans p-6 flex items-center justify-center"
+    >
+      <div class="max-w-4xl w-full">
+        <!-- Header -->
+        <div class="mb-6">
+          <h1 class="text-2xl font-bold text-slate-800">Statistik Aktivitas</h1>
+          <p class="text-sm text-slate-500 mt-1">
+            Ringkasan performa sistem dengan Bento Grid 2 Dimensi
+          </p>
+        </div>
+
+        <!-- KONTAINER GRID: 3 Kolom & Jarak Gap 4 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- ITEM 1: HERO METRIC (col-span-2) membentang selebar 2 kolom -->
+          <div
+            class="md:col-span-2 bg-linear-to-br from-indigo-600 to-indigo-800 text-white p-6 rounded-2xl shadow-sm flex flex-col justify-between"
+          >
+            <div class="flex items-center justify-between">
+              <span
+                class="text-xs uppercase tracking-wider font-semibold text-indigo-200"
+                >Total Pendapatan</span
+              >
+              <span
+                class="px-2 py-0.5 rounded-md bg-white/20 text-xs font-medium"
+                >Bulan Ini</span
+              >
+            </div>
+            <div class="my-6">
+              <h2 class="text-4xl font-extrabold tracking-tight">
+                Rp 84.520.000
+              </h2>
+              <p class="text-xs text-indigo-200 mt-2 flex items-center gap-1">
+                <span class="font-bold text-emerald-300">↑ +14.8%</span>
+                dibanding bulan sebelumnya
+              </p>
+            </div>
+            <div
+              class="w-full bg-indigo-900/40 h-2 rounded-full overflow-hidden"
+            >
+              <div class="bg-indigo-300 h-full w-[72%] rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- ITEM 2: SIDE WIDGET (row-span-2 pada layar desktop) -->
+          <div
+            class="md:row-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-base font-bold text-slate-800">
+                Aktivitas Terakhir
+              </h3>
+              <p class="text-xs text-slate-400 mt-0.5">
+                Pembaruan sistem berkala
+              </p>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-2 h-2 rounded-full bg-indigo-600 mt-1.5 shrink-0"
+                  ></div>
+                  <div>
+                    <p class="text-xs font-semibold text-slate-700">
+                      Deploy Versi 2.4 Berhasil
+                    </p>
+                    <p class="text-[10px] text-slate-400">10 menit lalu</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 shrink-0"
+                  ></div>
+                  <div>
+                    <p class="text-xs font-semibold text-slate-700">
+                      Backup Database Selesai
+                    </p>
+                    <p class="text-[10px] text-slate-400">1 jam lalu</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-2 h-2 rounded-full bg-amber-500 mt-1.5 shrink-0"
+                  ></div>
+                  <div>
+                    <p class="text-xs font-semibold text-slate-700">
+                      Sinkronisasi Log API
+                    </p>
+                    <p class="text-[10px] text-slate-400">4 jam lalu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="w-full py-2.5 rounded-xl bg-slate-50 text-slate-700 text-xs font-semibold hover:bg-slate-100 transition border border-slate-200 mt-6"
+            >
+              Lihat Semua Log
+            </button>
+          </div>
+
+          <!-- ITEM 3: STAT MINI 1 (col-span-1 biasa) -->
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between"
+          >
+            <span class="text-xs text-slate-500 font-medium"
+              >Pengguna Aktif</span
+            >
+            <div class="my-2">
+              <p class="text-2xl font-bold text-slate-800">1.420</p>
+            </div>
+            <span class="text-[11px] font-semibold text-emerald-600"
+              >+82 hari ini</span
+            >
+          </div>
+
+          <!-- ITEM 4: STAT MINI 2 (col-span-1 biasa) -->
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between"
+          >
+            <span class="text-xs text-slate-500 font-medium"
+              >Tingkat Konversi</span
+            >
+            <div class="my-2">
+              <p class="text-2xl font-bold text-slate-800">3.84%</p>
+            </div>
+            <span class="text-[11px] font-semibold text-rose-500"
+              >-0.4% penurunan</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

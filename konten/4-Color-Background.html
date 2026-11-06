@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hari 4 Color & Background</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="max-w-md mx-auto p-6 space-y-6">
+      <!-- promo card dengan background gradient -->
+      <div
+        class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-8 text-white shadow-lg"
+      >
+        <!-- lingkaran dekoratif semi-transparent -->
+        <div
+          class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-white/10 blur-xl"
+        ></div>
+        <div
+          class="absolute -left-8 -bottom-8 h-32 w-32 rounded-full bg-black/10 blur-xl"
+        ></div>
+        <div class="relative z-100">
+          <span
+            class="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-semibold tracking-wide text-white backdrop-blur-xl"
+            >Promo Special</span
+          >
+          <h2 class="mt-4 text-2xl font-bold tracking-tight text-white">
+            Update Paket Pro
+          </h2>
+          <p class="mt-2 text-sm leading-relaxed text-white/80">
+            Dapatkan akses penuh ke seluruh komponen sistem dan perbaruan
+            berkala tanpa batas project.
+          </p>
+          <div
+            class="mt-6 flex items-center justify-between border-t border-white/20 pt-4"
+          >
+            <div>
+              <span class="text-xs uppercase text-white/70">Mulai dari</span>
+              <p class="text-xl font-extrabold text-white">
+                Rp 149.000<span class="text-xs font-normal text-white/80"
+                  >/bln</span
+                >
+              </p>
+            </div>
+
+            <button
+              class="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-slate-100"
+            >
+              Klaim Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <!-- text gradient -->
+      <div class="text-center pt-2">
+        <h3
+          class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-500"
+        >
+          Desain Teks Menggunakan Gradasi
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">
+          Menggunakan utility text-transparent dan bg-clip-text
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

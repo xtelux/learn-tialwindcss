@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hari 8 Position Layout</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-slate-100 font-sans pb-32">
+      <!-- 1. STICKY NAVBAR: Menempel di atas saat halaman digulir -->
+      <header
+        class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4"
+      >
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+          <span class="font-bold text-slate-800 text-lg">Positioning UI</span>
+
+          <!-- Tombol Profil dengan Notification Badge Mengambang -->
+          <div class="relative inline-block">
+            <button
+              class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center hover:bg-slate-300 transition"
+            >
+              JD
+            </button>
+            <!-- BADGE POSISI ABSOLUT DENGAN POSISI NEGATIF -->
+            <span class="absolute -top-1 -right-1 flex h-4 w-4">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-4 w-4 bg-rose-500 text-[9px] font-bold text-white items-center justify-center"
+              >
+                3
+              </span>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Konten Utama Halaman -->
+      <main class="max-w-4xl mx-auto px-6 pt-10 space-y-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
+          <h2 class="text-xl font-bold text-slate-800 mb-2">
+            Simulasi Halaman Panjang
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Scroll halaman ke bawah untuk melihat bagaimana bilah navigasi di
+            atas tetap terkunci (*sticky*) pada posisinya tanpa tertutup elemen
+            konten.
+          </p>
+        </div>
+        <!-- 2. KARTU DENGAN ELEMEN OVERLAY & PIN STATUS MENGAMBANG -->
+        <div
+          class="relative bg-white rounded-2xl border border-slate-200 p-6 shadow-sm overflow-hidden"
+        >
+          <!-- Badge Pita Sudut (Absolute Positioning) -->
+          <div
+            class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1 rounded-bl-xl shadow-xs"
+          >
+            Fitur Baru
+          </div>
+
+          <h3 class="text-lg font-bold text-slate-900 pr-20">
+            Integrasi Cloud Storage
+          </h3>
+          <p class="text-sm text-slate-500 mt-2 max-w-lg leading-relaxed">
+            Semua aset dan media tersinkronisasi otomatis secara terpusat dengan
+            protokol keamanan end-to-end.
+          </p>
+
+          <div class="mt-6 flex items-center gap-3">
+            <button
+              class="bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Aktifkan
+            </button>
+          </div>
+        </div>
+        <!-- Kotak Dummy untuk memperpanjang ruang scroll -->
+        <div
+          class="h-96 bg-white/50 border border-dashed border-slate-300 rounded-2xl flex items-center justify-center text-slate-400 text-sm"
+        >
+          Scroll ke bawah untuk menguji tombol fixed di sudut kanan bawah
+        </div>
+      </main>
+
+      <!-- 3. FLOATING ACTION BUTTON (FIXED POSITIONING): Menempel permanen di sudut layar -->
+      <button
+        class="fixed bottom-6 right-6 z-40 bg-slate-900 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-slate-800 transition"
+      >
+        <span class="text-lg font-bold">💬</span>
+      </button>
+    </div>
+  </body>
+</html>
